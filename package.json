@@ -4,7 +4,8 @@
   "description": "Practicing SCSS & BEM",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css --output-style compressed"
   },
   "repository": {
     "type": "git",
@@ -12,9 +13,12 @@
   },
   "author": "Johney Auguste Ami",
   "license": "ISC",
-  "scss": "node-sass --watch scss -o css --output-style compressed",
   "bugs": {
     "url": "https://github.com/johneyaugusteami/LearningBEM.github.io/issues"
   },
-  "homepage": "https://github.com/johneyaugusteami/LearningBEM.github.io#readme"
+  "homepage": "https://github.com/johneyaugusteami/LearningBEM.github.io#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "pg": "^8.7.3"
+  }
 }
