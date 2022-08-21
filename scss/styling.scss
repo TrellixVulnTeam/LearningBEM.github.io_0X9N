@@ -5,35 +5,61 @@
 
 body {
     background-color: rgb(0, 39, 110);
+    width: 100%vw;
+    height: 100vh;
 }
 
-
+.header__frontpage {
+    display: flex;
+    position: relative;
+}
 
 nav {
-    padding: 2%;
+    padding: 1%;
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: rgb(0, 65, 187);
     color: rgb(196, 196, 196);
     flex-direction: row;
 }
 
 .nav__ul {
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 80%;
+    position: absolute;
+
+    .nav__item {
+        margin-left: 10%;
+        display: flex;
+        list-style: none;
+        font-size: 1.2em;
+
+        .nav__link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav__link:hover {
+            color: rgb(223, 119, 0);
+        }
+    }
+
+
 }
 
-.nav__item {
+
+.div__logo {
+    position: relative;
+    height: 40%;
+    width: 20%;
     display: flex;
-    list-style: none;
-    font-size: 2em;
 
-}
-
-.nav__link {
-    color: white;
-    text-decoration: none;
+    .img__logo--phenx {
+        height: 40%;
+        width: 40%;
+        padding-left: 15%;
+        padding-top: 8%;
+    }
 }
